@@ -10,7 +10,7 @@ import math
 
 def get_topic_page(topic,yyyymmdd):
     
-    topic_url = topic+'/historical/'+str(yyyymmdd)
+    topic_url = topic+'/historical/'+str(yyyymmdd) ##URL used
     response = requests.get(topic_url)
     
     with open('cryptooo.html','w') as f:
